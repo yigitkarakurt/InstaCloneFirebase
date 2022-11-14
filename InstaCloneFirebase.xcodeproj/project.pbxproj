@@ -14,6 +14,9 @@
 		000A754F292107C800B2FE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000A754E292107C800B2FE28 /* Assets.xcassets */; };
 		000A7552292107C800B2FE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000A7550292107C800B2FE28 /* LaunchScreen.storyboard */; };
 		000A755A29210B2A00B2FE28 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 000A755929210B2A00B2FE28 /* GoogleService-Info.plist */; };
+		00D62E262922651C0083CFE8 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D62E252922651C0083CFE8 /* FeedViewController.swift */; };
+		00D62E282922653F0083CFE8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D62E272922653F0083CFE8 /* SettingsViewController.swift */; };
+		00D62E2A292265600083CFE8 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D62E29292265600083CFE8 /* UploadViewController.swift */; };
 		DE1054071620863A2506D136 /* Pods_InstaCloneFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2C80A5B813582FADDA5A14E /* Pods_InstaCloneFirebase.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		000A7551292107C800B2FE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		000A7553292107C800B2FE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		000A755929210B2A00B2FE28 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		00D62E252922651C0083CFE8 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		00D62E272922653F0083CFE8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		00D62E29292265600083CFE8 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		3A2A0AADF5C6E21F5E66C8AD /* Pods-InstaCloneFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneFirebase.release.xcconfig"; path = "Target Support Files/Pods-InstaCloneFirebase/Pods-InstaCloneFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		D48779698A98A2F2796A1A0F /* Pods-InstaCloneFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaCloneFirebase.debug.xcconfig"; path = "Target Support Files/Pods-InstaCloneFirebase/Pods-InstaCloneFirebase.debug.xcconfig"; sourceTree = "<group>"; };
 		F2C80A5B813582FADDA5A14E /* Pods_InstaCloneFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaCloneFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +73,9 @@
 			children = (
 				000A7545292107C700B2FE28 /* AppDelegate.swift */,
 				000A7547292107C700B2FE28 /* SceneDelegate.swift */,
+				00D62E29292265600083CFE8 /* UploadViewController.swift */,
+				00D62E272922653F0083CFE8 /* SettingsViewController.swift */,
+				00D62E252922651C0083CFE8 /* FeedViewController.swift */,
 				000A7549292107C700B2FE28 /* ViewController.swift */,
 				000A754B292107C700B2FE28 /* Main.storyboard */,
 				000A754E292107C800B2FE28 /* Assets.xcassets */,
@@ -91,7 +100,6 @@
 				D48779698A98A2F2796A1A0F /* Pods-InstaCloneFirebase.debug.xcconfig */,
 				3A2A0AADF5C6E21F5E66C8AD /* Pods-InstaCloneFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,7 +220,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				000A754A292107C700B2FE28 /* ViewController.swift in Sources */,
+				00D62E2A292265600083CFE8 /* UploadViewController.swift in Sources */,
 				000A7546292107C700B2FE28 /* AppDelegate.swift in Sources */,
+				00D62E262922651C0083CFE8 /* FeedViewController.swift in Sources */,
+				00D62E282922653F0083CFE8 /* SettingsViewController.swift in Sources */,
 				000A7548292107C700B2FE28 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
