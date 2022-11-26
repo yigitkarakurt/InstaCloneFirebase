@@ -141,16 +141,6 @@
                                                         <action selector="likeButtonClicked:" destination="bMb-E7-wDo" eventType="touchUpInside" id="nB5-Si-YRa"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-ZU-KyM">
-                                                    <rect key="frame" x="31.666666666666657" y="296" width="310.33333333333337" height="37"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="37" id="P2w-LX-UDQ"/>
-                                                        <constraint firstAttribute="width" constant="310.33333333333337" id="dan-uX-beu"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3K-ue-2kK">
                                                     <rect key="frame" x="315" y="341" width="46" height="21"/>
                                                     <constraints>
@@ -160,10 +150,28 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vei-Px-rsX">
+                                                    <rect key="frame" x="331" y="11" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izp-ZU-KyM">
+                                                    <rect key="frame" x="31.666666666666657" y="304" width="310.33333333333337" height="29"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="29" id="P2w-LX-UDQ"/>
+                                                        <constraint firstAttribute="width" constant="310.33333333333337" id="dan-uX-beu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="hla-eh-dol" firstAttribute="top" secondItem="Izp-ZU-KyM" secondAttribute="bottom" id="0zK-eF-uoF"/>
+                                                <constraint firstItem="vei-Px-rsX" firstAttribute="trailing" secondItem="xj8-bH-20c" secondAttribute="trailingMargin" id="8PY-W6-X1O"/>
                                                 <constraint firstItem="Izp-ZU-KyM" firstAttribute="leading" secondItem="xj8-bH-20c" secondAttribute="leadingMargin" constant="11.666666666666657" id="Eoy-T0-6jH"/>
+                                                <constraint firstItem="w0A-D5-gXW" firstAttribute="firstBaseline" secondItem="vei-Px-rsX" secondAttribute="firstBaseline" id="FIW-z1-WqO"/>
                                                 <constraint firstItem="w0A-D5-gXW" firstAttribute="trailing" secondItem="i3K-ue-2kK" secondAttribute="trailing" id="L65-3W-sMs"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="i3K-ue-2kK" secondAttribute="bottom" constant="-5" id="LXX-oU-7lf"/>
                                                 <constraint firstItem="qod-75-xWi" firstAttribute="centerX" secondItem="xj8-bH-20c" secondAttribute="centerX" id="SWQ-fJ-pa4"/>
@@ -177,6 +185,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="commentLabel" destination="Izp-ZU-KyM" id="wP6-ie-bQY"/>
+                                            <outlet property="documentIdLabel" destination="vei-Px-rsX" id="goU-SP-onU"/>
                                             <outlet property="likeLabel" destination="i3K-ue-2kK" id="Wal-Lb-g7h"/>
                                             <outlet property="userEmailLabel" destination="w0A-D5-gXW" id="hN6-Jh-bTn"/>
                                             <outlet property="userImageView" destination="qod-75-xWi" id="g3r-p5-55e"/>
