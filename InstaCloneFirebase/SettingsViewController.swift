@@ -10,10 +10,15 @@ import Firebase
 
 class SettingsViewController: UIViewController {
 
+    
+    @IBOutlet weak var accountLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        accountLabel.text = "Account : \(Auth.auth().currentUser!.email!)"
+        
     }
     
 

@@ -78,6 +78,13 @@
                                     <action selector="logoutClicked:" destination="amO-bt-HRP" eventType="touchUpInside" id="XNp-fO-tXD"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Account : " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDU-KL-gu1">
+                                <rect key="frame" x="41" y="226" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lq3-qk-cyh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -89,12 +96,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="jFb-Wu-jAS"/>
                     <connections>
+                        <outlet property="accountLabel" destination="RDU-KL-gu1" id="a7E-D2-eih"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="cd7-HN-deY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMe-lS-U7e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-575" y="695"/>
+            <point key="canvasLocation" x="-576.33587786259545" y="694.36619718309862"/>
         </scene>
         <!--Feed-->
         <scene sceneID="ao3-Cp-Ge5">
@@ -134,9 +142,9 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hla-eh-dol">
-                                                    <rect key="frame" x="20" y="333" width="80" height="35"/>
+                                                    <rect key="frame" x="19.999999999999996" y="333" width="54.666666666666657" height="35"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="plain" title="Like &lt;3"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Like"/>
                                                     <connections>
                                                         <action selector="likeButtonClicked:" destination="bMb-E7-wDo" eventType="touchUpInside" id="nB5-Si-YRa"/>
                                                     </connections>
